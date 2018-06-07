@@ -1,0 +1,28 @@
+{
+  "name": "hackernews_api",
+  "version": "1.0.0",
+  "description": "RESTful API to filter through top stories on Hacker News",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app --exec babel-node -e js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "restful"
+  ],
+  "author": "Manish",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "node-fetch": "^2.1.2",
+    "nodemon": "^1.17.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
