@@ -12,8 +12,9 @@ app.use(bodyParser.json());
 
 //home route
 app.get('/', (req, res) => {
-    res.send('Invalid Endpoint');
+    res.send({ error: true, message: 'Invalid Endpoint!' });
 });
+
 
 //the API endpoint
 const news = require('./routes/newsRoutes');
@@ -23,3 +24,5 @@ app.use('/newsapi', news);
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
 });
+
+module.exports = app;
