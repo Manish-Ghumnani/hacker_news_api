@@ -95,7 +95,7 @@ router.use( (err,req,res,next) => {
         case 'KeywordisNull':
             res.status(400).json({error: true, message: err.message})
         default: 
-            res.status(404).json({error: true, message: err.message})
+            res.status(400).json({error: true, message: err.message})
     }
 })
     

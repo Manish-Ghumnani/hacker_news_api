@@ -10,7 +10,7 @@ const app = require('../app.js'); // Our app
  
 
 //describe the API endpoint 
-describe('NEWS API endpoint /newsapi', () => {  
+describe('NEWS API endpoint /newsapi', function()  {  
   this.timeout(20000);   //timeout for the response
 
   before( () => {
